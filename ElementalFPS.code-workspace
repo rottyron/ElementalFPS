@@ -1,0 +1,869 @@
+{
+	"folders": [
+		{
+			"name": "ElementalFPS",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off",
+		"uetools.unrealEngineInstallationSearchPath": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Binaries/Linux/"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp",
+			"vadimcn.vscode-lldb",
+			"ms-vscode.mono-debug",
+			"dfarley1.file-picker"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "ElementalFPS Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"Linux",
+					"Debug",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"Linux",
+					"Debug",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ElementalFPS Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"Linux",
+					"Debug",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"Linux",
+					"DebugGame",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"Linux",
+					"DebugGame",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ElementalFPS Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"Linux",
+					"DebugGame",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"Linux",
+					"Development",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"Linux",
+					"Development",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ElementalFPS Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"Linux",
+					"Development",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS Linux Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"Linux",
+					"Test",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"Linux",
+					"Test",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ElementalFPS Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS Linux Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"Linux",
+					"Test",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS Linux Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"Linux",
+					"Shipping",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"Linux",
+					"Shipping",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ElementalFPS Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"Linux",
+					"Shipping",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"LinuxArm64",
+					"Debug",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"LinuxArm64",
+					"Debug",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ElementalFPS LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"LinuxArm64",
+					"Debug",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"LinuxArm64",
+					"DebugGame",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"LinuxArm64",
+					"DebugGame",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ElementalFPS LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"LinuxArm64",
+					"DebugGame",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"LinuxArm64",
+					"Development",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"LinuxArm64",
+					"Development",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ElementalFPS LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"LinuxArm64",
+					"Development",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"LinuxArm64",
+					"Test",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"LinuxArm64",
+					"Test",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ElementalFPS LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"LinuxArm64",
+					"Test",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"LinuxArm64",
+					"Shipping",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"LinuxArm64",
+					"Shipping",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ElementalFPS LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPS LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPS",
+					"LinuxArm64",
+					"Shipping",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPSEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPSEditor",
+					"Linux",
+					"Debug",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPSEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPSEditor",
+					"Linux",
+					"Debug",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ElementalFPSEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPSEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPSEditor",
+					"Linux",
+					"Debug",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPSEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPSEditor",
+					"Linux",
+					"DebugGame",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPSEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPSEditor",
+					"Linux",
+					"DebugGame",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ElementalFPSEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPSEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPSEditor",
+					"Linux",
+					"DebugGame",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPSEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPSEditor",
+					"Linux",
+					"Development",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPSEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPSEditor",
+					"Linux",
+					"Development",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ElementalFPSEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			},
+			{
+				"label": "ElementalFPSEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"ElementalFPSEditor",
+					"Linux",
+					"Development",
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch ElementalFPS (Debug)",
+				"request": "launch",
+				"program": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Binaries/Linux/ElementalFPS-Linux-Debug",
+				"preLaunchTask": "ElementalFPS Linux Debug Build",
+				"args": [
+				],
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch ElementalFPS (DebugGame)",
+				"request": "launch",
+				"program": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Binaries/Linux/ElementalFPS-Linux-DebugGame",
+				"preLaunchTask": "ElementalFPS Linux DebugGame Build",
+				"args": [
+				],
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch ElementalFPS (Development)",
+				"request": "launch",
+				"program": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Binaries/Linux/ElementalFPS",
+				"preLaunchTask": "ElementalFPS Linux Development Build",
+				"args": [
+				],
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch ElementalFPS (Test)",
+				"request": "launch",
+				"program": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Binaries/Linux/ElementalFPS-Linux-Test",
+				"preLaunchTask": "ElementalFPS Linux Test Build",
+				"args": [
+				],
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch ElementalFPS (Shipping)",
+				"request": "launch",
+				"program": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Binaries/Linux/ElementalFPS-Linux-Shipping",
+				"preLaunchTask": "ElementalFPS Linux Shipping Build",
+				"args": [
+				],
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch ElementalFPSEditor (Debug)",
+				"request": "launch",
+				"program": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+				"preLaunchTask": "ElementalFPSEditor Linux Debug Build",
+				"args": [
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject"
+				],
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch ElementalFPSEditor (DebugGame)",
+				"request": "launch",
+				"program": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+				"preLaunchTask": "ElementalFPSEditor Linux DebugGame Build",
+				"args": [
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject"
+				],
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch ElementalFPSEditor (Development)",
+				"request": "launch",
+				"program": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Binaries/Linux/UnrealEditor",
+				"preLaunchTask": "ElementalFPSEditor Linux Development Build",
+				"args": [
+					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject"
+				],
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine",
+				"type": "cppdbg",
+				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Linux Development Build",
+				"program": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+			}
+		]
+	}
+}

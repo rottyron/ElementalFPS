@@ -1,0 +1,22 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "43F0DEFA-A29E-44B8-9C28-893915F58E42",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "ElementalFPS",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	]
+}

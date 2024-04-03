@@ -1,0 +1,122 @@
+[
+	{
+		"file": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Source/ElementalFPS/ElementalFPS.Build.cs",
+		"arguments": [
+			"/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/.vscode/compileCommands_Default/ElementalFPS.1.rsp"
+		],
+		"directory": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Source/ElementalFPS/ElementalFPS.cpp",
+		"arguments": [
+			"/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/.vscode/compileCommands_Default/ElementalFPS.1.rsp"
+		],
+		"directory": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Source/ElementalFPS/ElementalFPS.h",
+		"arguments": [
+			"/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/.vscode/compileCommands_Default/ElementalFPS.1.rsp"
+		],
+		"directory": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Source/ElementalFPS/ElementalFPSCharacter.cpp",
+		"arguments": [
+			"/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/.vscode/compileCommands_Default/ElementalFPS.1.rsp"
+		],
+		"directory": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Source/ElementalFPS/ElementalFPSCharacter.h",
+		"arguments": [
+			"/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/.vscode/compileCommands_Default/ElementalFPS.1.rsp"
+		],
+		"directory": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Source/ElementalFPS/ElementalFPSGameMode.cpp",
+		"arguments": [
+			"/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/.vscode/compileCommands_Default/ElementalFPS.1.rsp"
+		],
+		"directory": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Source/ElementalFPS/ElementalFPSGameMode.h",
+		"arguments": [
+			"/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/.vscode/compileCommands_Default/ElementalFPS.1.rsp"
+		],
+		"directory": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Source/ElementalFPS/ElementalFPSPlayerController.cpp",
+		"arguments": [
+			"/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/.vscode/compileCommands_Default/ElementalFPS.1.rsp"
+		],
+		"directory": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Source/ElementalFPS/ElementalFPSPlayerController.h",
+		"arguments": [
+			"/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/.vscode/compileCommands_Default/ElementalFPS.1.rsp"
+		],
+		"directory": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Source/ElementalFPS/ElementalFPSProjectile.cpp",
+		"arguments": [
+			"/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/.vscode/compileCommands_Default/ElementalFPS.1.rsp"
+		],
+		"directory": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Source/ElementalFPS/ElementalFPSProjectile.h",
+		"arguments": [
+			"/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/.vscode/compileCommands_Default/ElementalFPS.1.rsp"
+		],
+		"directory": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Source/ElementalFPS/TP_PickUpComponent.cpp",
+		"arguments": [
+			"/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/.vscode/compileCommands_Default/ElementalFPS.1.rsp"
+		],
+		"directory": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Source/ElementalFPS/TP_PickUpComponent.h",
+		"arguments": [
+			"/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/.vscode/compileCommands_Default/ElementalFPS.1.rsp"
+		],
+		"directory": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Source/ElementalFPS/TP_WeaponComponent.cpp",
+		"arguments": [
+			"/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/.vscode/compileCommands_Default/ElementalFPS.1.rsp"
+		],
+		"directory": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/Source/ElementalFPS/TP_WeaponComponent.h",
+		"arguments": [
+			"/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/.vscode/compileCommands_Default/ElementalFPS.1.rsp"
+		],
+		"directory": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Source"
+	}
+]
