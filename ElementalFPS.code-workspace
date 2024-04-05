@@ -6,13 +6,12 @@
 		},
 		{
 			"name": "UE5",
-			"path": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+			"path": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 		}
 	],
 	"settings": {
 		"typescript.tsc.autoDetect": "off",
-		"npm.autoDetect": "off",
-		"uetools.unrealEngineInstallationSearchPath": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Binaries/Linux/"
+		"npm.autoDetect": "off"
 	},
 	"extensions": {
 		"recommendations": [
@@ -40,7 +39,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -60,7 +59,7 @@
 				],
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -78,7 +77,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -95,7 +94,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -115,7 +114,7 @@
 				],
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -133,7 +132,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -150,7 +149,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -170,7 +169,7 @@
 				],
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -188,7 +187,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -205,7 +204,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -225,7 +224,7 @@
 				],
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -243,7 +242,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -260,7 +259,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -280,7 +279,7 @@
 				],
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -298,7 +297,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -315,7 +314,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -335,7 +334,7 @@
 				],
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -353,7 +352,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -370,7 +369,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -390,7 +389,7 @@
 				],
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -408,7 +407,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -425,7 +424,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -445,7 +444,7 @@
 				],
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -463,7 +462,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -480,7 +479,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -500,7 +499,7 @@
 				],
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -518,7 +517,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -535,7 +534,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -555,7 +554,7 @@
 				],
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -573,7 +572,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -590,7 +589,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -610,7 +609,7 @@
 				],
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -628,7 +627,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -645,7 +644,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -665,7 +664,7 @@
 				],
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -683,7 +682,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -700,7 +699,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -720,7 +719,7 @@
 				],
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			},
 			{
@@ -738,7 +737,7 @@
 				"problemMatcher": "$msCompile",
 				"type": "shell",
 				"options": {
-					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+					"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 				}
 			}
 		]
@@ -753,9 +752,9 @@
 				"preLaunchTask": "ElementalFPS Linux Debug Build",
 				"args": [
 				],
-				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine",
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release",
 				"type": "cppdbg",
-				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 				"showDisplayString": true
 			},
 			{
@@ -765,9 +764,9 @@
 				"preLaunchTask": "ElementalFPS Linux DebugGame Build",
 				"args": [
 				],
-				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine",
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release",
 				"type": "cppdbg",
-				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 				"showDisplayString": true
 			},
 			{
@@ -777,9 +776,9 @@
 				"preLaunchTask": "ElementalFPS Linux Development Build",
 				"args": [
 				],
-				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine",
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release",
 				"type": "cppdbg",
-				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 				"showDisplayString": true
 			},
 			{
@@ -789,9 +788,9 @@
 				"preLaunchTask": "ElementalFPS Linux Test Build",
 				"args": [
 				],
-				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine",
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release",
 				"type": "cppdbg",
-				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 				"showDisplayString": true
 			},
 			{
@@ -801,48 +800,48 @@
 				"preLaunchTask": "ElementalFPS Linux Shipping Build",
 				"args": [
 				],
-				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine",
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release",
 				"type": "cppdbg",
-				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 				"showDisplayString": true
 			},
 			{
 				"name": "Launch ElementalFPSEditor (Debug)",
 				"request": "launch",
-				"program": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+				"program": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
 				"preLaunchTask": "ElementalFPSEditor Linux Debug Build",
 				"args": [
 					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject"
 				],
-				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine",
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release",
 				"type": "cppdbg",
-				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 				"showDisplayString": true
 			},
 			{
 				"name": "Launch ElementalFPSEditor (DebugGame)",
 				"request": "launch",
-				"program": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+				"program": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
 				"preLaunchTask": "ElementalFPSEditor Linux DebugGame Build",
 				"args": [
 					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject"
 				],
-				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine",
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release",
 				"type": "cppdbg",
-				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 				"showDisplayString": true
 			},
 			{
 				"name": "Launch ElementalFPSEditor (Development)",
 				"request": "launch",
-				"program": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Binaries/Linux/UnrealEditor",
+				"program": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release/Engine/Binaries/Linux/UnrealEditor",
 				"preLaunchTask": "ElementalFPSEditor Linux Development Build",
 				"args": [
 					"/run/media/rottyron/ssdarray/home/rottyron/Documents/Unreal Projects/ElementalFPS/ElementalFPS.uproject"
 				],
-				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine",
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release",
 				"type": "cppdbg",
-				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"visualizerFile": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 				"showDisplayString": true
 			},
 			{
@@ -850,7 +849,7 @@
 				"type": "coreclr",
 				"request": "launch",
 				"preLaunchTask": "UnrealBuildTool Linux Development Build",
-				"program": "/run/media/rottyron/ssdarray/unreal/UnrealEngine/Engine/Build/BatchFiles/RunUBT.bat",
+				"program": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release/Engine/Build/BatchFiles/RunUBT.bat",
 				"args": [
 					"-projectfiles",
 					"-vscode",
@@ -862,7 +861,7 @@
 				"console": "internalConsole",
 				"internalConsoleOptions": "openOnSessionStart",
 				"stopAtEntry": false,
-				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine"
+				"cwd": "/run/media/rottyron/ssdarray/unreal/UnrealEngine-release"
 			}
 		]
 	}
