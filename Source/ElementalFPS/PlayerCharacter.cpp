@@ -47,14 +47,9 @@ void APlayerCharacter::BeginPlay()
 void APlayerCharacter::Move(const FInputActionValue& Value)
 {
 	FVector2d movementVec = Value.Get<FVector2d>();
-	FString YString = movementVec.ToString();
-	GEngine->AddOnScreenDebugMessage(-1, 5.0, FColor::Yellow, YString);
-
-	if(Controller != nullptr)	//Add controller input
-	{
-		AddMovementInput(GetActorForwardVector(), movementVec.Y);
-		AddMovementInput(GetActorForwardVector(), movementVec.X);
-	}
+	//Must do it like this as the other method just kinda goes NOPE Honestly had no idea why the other method worked anywho
+	AddMovementInput(GetActorForwardVector(), movementVec.Y);
+	AddMovementInput(GetActorRightVector(), movementVec.X);
 	
 }
 
