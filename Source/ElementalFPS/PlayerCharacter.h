@@ -35,6 +35,9 @@ public:
 	/** Look Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
 	class UInputAction* LookAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
+	class UInputAction* FireAction;
 	
 	UFUNCTION(BlueprintCallable, Category = "Abilities")
 	void SpawnActor();
@@ -50,6 +53,7 @@ protected:
 	UFUNCTION()
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
+	void Fire(const FInputActionValue& Value);
 
 public:	
 	// Called every frame

@@ -2,11 +2,12 @@
 
 
 #include "PlayerCharacter.h"
-
+#include "Projectile.h"
 #include "ElementalFPSCharacter.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
+#include "Projects.h"
 #include "Components/CapsuleComponent.h"
 
 
@@ -65,6 +66,12 @@ void APlayerCharacter::Look(const FInputActionValue& Value)
 	}
 }
 
+void APlayerCharacter::Fire(const FInputActionValue& Value)
+{
+	FTransform TestTransform = GetFirstPersonCameraComponent()->GetComponentTransform();
+	AProjectile* ProjectileObject = (AProjectile*) GetWorld()->SpawnActor(AProjectile::StaticClass());
+}
+
 // Called every frame
 void APlayerCharacter::Tick(float DeltaTime)
 {
@@ -87,6 +94,9 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &APlayerCharacter::Look);
+
+		//Fire Action
+		EnhancedInputComponent->BindAction(FireAction, ETriggerEvent::Triggered, this, &APlayerCharacter::Fire);
 	}
 	else
 	{
