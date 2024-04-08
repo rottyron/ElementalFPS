@@ -16,6 +16,7 @@ AProjectile::AProjectile()
 	ConstructorHelpers::FObjectFinder<UStaticMesh> const MeshObj(TEXT("/Game/StarterContent/Shapes/Shape_Cone"));
 	ProjectileMesh->SetStaticMesh(MeshObj.Object);
 	const FRotator* rotation = new FRotator(-90.0f,0.0f,0.0);
+	ProjectileMesh->SetWorldScale3D(FVector3d(0.1f));
 	ProjectileMesh->SetWorldRotation(*rotation);
 
 	// Use a ProjectileMovementComponent to govern this projectile's movement
@@ -24,10 +25,10 @@ AProjectile::AProjectile()
 	ProjectileMovement->InitialSpeed = 3000.f;
 	ProjectileMovement->MaxSpeed = 3000.f;
 	ProjectileMovement->bRotationFollowsVelocity = true;
-	ProjectileMovement->bShouldBounce = true;
-
+	ProjectileMovement->bShouldBounce = false;
+	ProjectileMovement->ProjectileGravityScale = 0;
 	// Die after 3 seconds by default
-	InitialLifeSpan = 3.0f;
+	InitialLifeSpan = 5.0f;
 
 }
 

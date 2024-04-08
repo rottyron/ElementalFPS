@@ -2,6 +2,10 @@
 
 
 #include "PlayerCharacter.h"
+
+#include <string>
+#include <string>
+
 #include "Projectile.h"
 #include "ElementalFPSCharacter.h"
 #include "EnhancedInputComponent.h"
@@ -11,10 +15,10 @@
 #include "Components/CapsuleComponent.h"
 
 
-
 // Sets default values
 APlayerCharacter::APlayerCharacter()
 {
+    fire.BindUObject(this, &APlayerCharacter::EarthFire);
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
@@ -66,11 +70,29 @@ void APlayerCharacter::Look(const FInputActionValue& Value)
 	}
 }
 
-void APlayerCharacter::Fire(const FInputActionValue& Value)
+void APlayerCharacter::BasicFire() const
 {
-	FTransform TestTransform = GetFirstPersonCameraComponent()->GetComponentTransform();
-	AProjectile* ProjectileObject = (AProjectile*) GetWorld()->SpawnActor(AProjectile::StaticClass());
+	FVector projectileSpawn = GetActorLocation();
+	projectileSpawn.Z += 60.0f;
+	AProjectile* ProjectileObject = (AProjectile*) GetWorld()->SpawnActor<AProjectile>(projectileSpawn, GetFirstPersonCameraComponent()->GetComponentRotation());
+
 }
+
+void APlayerCharacter::EarthFire()
+{
+		GetWorldTimerManager().SetTimer(timer, this, &APlayerCharacter::EarthFireTimerFunction, 0.2f, true, 0.0f);
+}
+
+void APlayerCharacter::EarthFireTimerFunction() 
+{
+	timesPlayed++;
+	if(timesPlayed <= 5)
+	{
+		BasicFire();
+	}
+	else timesPlayed = 0, GetWorldTimerManager().ClearTimer(timer);
+}
+
 
 // Called every frame
 void APlayerCharacter::Tick(float DeltaTime)
@@ -96,7 +118,7 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &APlayerCharacter::Look);
 
 		//Fire Action
-		EnhancedInputComponent->BindAction(FireAction, ETriggerEvent::Triggered, this, &APlayerCharacter::Fire);
+		EnhancedInputComponent->BindAction(FireAction, ETriggerEvent::Triggered, this, &APlayerCharacter::FireTrigger);
 	}
 	else
 	{
@@ -104,6 +126,16 @@ void APlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	}
 
 }
+
+void APlayerCharacter::FireTrigger()
+{
+	if(fire.IsBound())
+	{
+		fire.Execute();
+	}
+	else GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, TEXT("Delegate no bound, Cannot fire weapon"));
+}
+
 
 //Spawn Code
 void APlayerCharacter::SpawnActor()

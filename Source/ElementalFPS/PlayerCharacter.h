@@ -5,16 +5,21 @@
 #include "CoreMinimal.h"
 #include "InputAction.h"
 #include "InputActionValue.h"
+#include "Projectile.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
 #include "PlayerCharacter.generated.h"
 
 class UInputMappingContext;
 struct FInputActionValue;
-
 UCLASS()
 class ELEMENTALFPS_API APlayerCharacter : public ACharacter
 {
+	FTimerHandle timer;
+	int timesPlayed = 0;
+	DECLARE_DELEGATE(FFireDelegate);
+	FFireDelegate fire;
+
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, Category="Input", meta=(AllowPrivateAccess))
@@ -53,9 +58,20 @@ protected:
 	UFUNCTION()
 	void Move(const FInputActionValue& Value);
 	void Look(const FInputActionValue& Value);
-	void Fire(const FInputActionValue& Value);
+	
+	/***********GUN FIRING OPTIONS***********/
+	UFUNCTION()
+	void BasicFire() const;
+	UFUNCTION()
+	void EarthFire();
+	
+	void EarthFireTimerFunction();
+	/***********END GUN FIRING OPTIONS*******/
+	
+	//Fire trigger to trigger the delegate
+	void FireTrigger();
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -64,6 +80,5 @@ public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
-	
 	
 };
