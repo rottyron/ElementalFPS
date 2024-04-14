@@ -33,6 +33,9 @@ class ELEMENTALFPS_API APlayerCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FirstPersonCameraComponent;
 
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<AProjectile> ProjectileBP;
+	
 public:
 	// Sets default values for this character's properties
 	APlayerCharacter();

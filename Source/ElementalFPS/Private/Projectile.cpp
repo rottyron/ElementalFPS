@@ -12,12 +12,12 @@ AProjectile::AProjectile()
 	Root = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));
 	RootComponent = Root;
 	ProjectileMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
-	ProjectileMesh->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepWorldTransform);
-	ConstructorHelpers::FObjectFinder<UStaticMesh> const MeshObj(TEXT("/Game/StarterContent/Shapes/Shape_Cone"));
-	ProjectileMesh->SetStaticMesh(MeshObj.Object);
-	const FRotator* rotation = new FRotator(-90.0f,0.0f,0.0);
-	ProjectileMesh->SetWorldScale3D(FVector3d(0.1f));
-	ProjectileMesh->SetWorldRotation(*rotation);
+	ProjectileMesh->AttachToComponent(RootComponent, FAttachmentTransformRules::KeepRelativeTransform);
+	//ConstructorHelpers::FObjectFinder<UStaticMesh> const MeshObj(TEXT("/Game/StarterContent/Shapes/Shape_Cone"));
+	//ProjectileMesh->SetStaticMesh(MeshObj.Object);
+	//const FRotator* rotation = new FRotator(-90.0f,0.0f,0.0);
+	//ProjectileMesh->SetWorldScale3D(FVector3d(0.1f));
+	//ProjectileMesh->SetWorldRotation(*rotation);
 
 	// Use a ProjectileMovementComponent to govern this projectile's movement
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileComp"));

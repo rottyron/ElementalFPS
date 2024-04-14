@@ -74,7 +74,9 @@ void APlayerCharacter::BasicFire() const
 {
 	FVector projectileSpawn = GetActorLocation();
 	projectileSpawn.Z += 60.0f;
-	AProjectile* ProjectileObject = (AProjectile*) GetWorld()->SpawnActor<AProjectile>(projectileSpawn, GetFirstPersonCameraComponent()->GetComponentRotation());
+	//AProjectile* ProjectileObject = (AProjectile*) GetWorld()->SpawnActor<AProjectile>(projectileSpawn, GetFirstPersonCameraComponent()->GetComponentRotation());
+	FRotator rotationSpawn = GetFirstPersonCameraComponent()->GetComponentRotation();
+	GetWorld()->SpawnActor(ProjectileBP,&projectileSpawn, &rotationSpawn);
 
 }
 
